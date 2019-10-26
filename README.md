@@ -5,7 +5,7 @@ While implementing the Text-To-Speech service from Microsoft Azure, I was left q
 azure text to speech PYTHON 3
 
 
-first part: you need to import these packages. if they're not available use: pip install <package name>
+first part: you need to import these packages. if they're not found use: pip install <package name>
 
     import os
     import requests
@@ -16,9 +16,9 @@ we'll create a class that we will later call on (we'll call it TextToSpeech)
 
     class TextToSpeech(object):
     
-purpose of __init__ method is to initialize the values of instance members for the object.
-subscription_key will later be defined when the class is called on in the code.
-tts prompts the user to enter their own values and timesstr records time to name your audio file later.
+purpose of __init__ method is to initialize the values of instance members for the object. 
+and subscription_key will later be defined when the class is called on in the code.
+tts prompts the user to enter their own values (what they want to convert from text to speech) and timesstr records time to name your audio file later.
 
     def __init__(self, subscription_key):
         self.subscription_key = subscription_key
